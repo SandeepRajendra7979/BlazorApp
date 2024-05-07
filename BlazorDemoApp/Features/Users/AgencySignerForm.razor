@@ -1,0 +1,14 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h5>Select Agency Signer</h5>
+    </div>
+    <div class="card-body">
+        <input type="radio" name="agencySigner" value="IAmSigning" @bind="@SelectedValue" />I am signing the agreement
+        <br />
+        <input type="radio" name="agencySigner" value="AgencySigning" @bind="@SelectedValue" />Someone from an agency is signing the agreement
+    </div>
+</div>
+
+@code {
+    private string SelectedValue { get; set; }
+}
